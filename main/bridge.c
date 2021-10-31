@@ -4275,7 +4275,7 @@ static struct ast_channel *get_transferee(struct ao2_container *channels, struct
  * \param bridge2 Bridge that chan2 is in. If NULL, then chan2 is not bridged.
  * \param publication Data to publish for a stasis attended transfer message.
  * \retval AST_BRIDGE_TRANSFER_FAIL Internal error occurred
- * \retval AST_BRIDGE_TRANSFER_SUCCESS Succesfully transferred the bridge
+ * \retval AST_BRIDGE_TRANSFER_SUCCESS Successfully transferred the bridge
  */
 static enum ast_transfer_result attended_transfer_bridge(struct ast_channel *chan1,
 		struct ast_channel *chan2, struct ast_bridge *bridge1, struct ast_bridge *bridge2,
