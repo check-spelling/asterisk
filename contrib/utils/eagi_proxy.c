@@ -27,7 +27,7 @@
  * 		-you can change the port numbers in the sourcecode below
  *
  * 	Once you make the call, both programs will accept the incoming
- * 	connection. The program on port 8417 will print out the enviornemnt
+ * 	connection. The program on port 8417 will print out the environment
  * 	(unless the appropriate define below is commented) and you can write
  * 	any AGI command there (http://www.voip-info.org/wiki-Asterisk+AGI),
  * 	e.g.:
@@ -58,7 +58,7 @@
 /* DEFINES */
 #define SIGNAL_PORT 8418
 #define COMMAND_PORT 8417
-#define SEND_ENVIORNMENT /*send the enviornment thru the socket*/
+#define SEND_ENVIRONMENT /*send the environment thru the socket*/
 /************************/
 
 
@@ -160,10 +160,10 @@ void finalize()
 
 void* readStdin(void* ptr)
 {
-	while(1)/*read enviornment*/
+	while(1)/*read environment*/
 	{
 		fgets(buf,BUFSIZE,stdin);
-		#ifdef SEND_ENVIORNMENT
+		#ifdef SEND_ENVIRONMENT
 			pthread_mutex_lock(&command_mutex);
 			write_buf(command_desc,buf,strlen(buf));
 			pthread_mutex_unlock(&command_mutex);
