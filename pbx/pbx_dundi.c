@@ -1888,7 +1888,7 @@ static int handle_command_response(struct dundi_transaction *trans, struct dundi
 				hasauth = 1;
 
 			if (!hasauth) {
-				ast_log(LOG_NOTICE, "Reponse to register not authorized!\n");
+				ast_log(LOG_NOTICE, "Response to register not authorized!\n");
 				if (!final) {
 					dundi_ie_append_cause(ied, DUNDI_IE_CAUSE, DUNDI_CAUSE_NOAUTH, "Improper signature in answer");
 					dundi_send(trans, DUNDI_COMMAND_CANCEL, 0, 1, ied);
