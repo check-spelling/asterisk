@@ -1308,7 +1308,7 @@ int ooSendRequestModeReject(OOH323CallData* call,
                       T_H245MultimediaSystemControlMessage_response);
    if(ret != OO_OK)
    {
-      OOTRACEERR3("Error:H245 message creation failed for - RequstMode "
+      OOTRACEERR3("Error:H245 message creation failed for - RequestMode "
                   "Reject (%s, %s)\n",call->callType,
                   call->callToken);
       return OO_FAILED;
@@ -1359,7 +1359,7 @@ int ooSendRequestMode(OOH323CallData* call,
                       T_H245MultimediaSystemControlMessage_request);
    if(ret != OO_OK)
    {
-      OOTRACEERR3("Error:H245 message creation failed for - RequstMode "
+      OOTRACEERR3("Error:H245 message creation failed for - RequestMode "
                   "(%s, %s)\n",call->callType,
                   call->callToken);
       return OO_FAILED;
