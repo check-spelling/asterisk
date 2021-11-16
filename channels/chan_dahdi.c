@@ -14684,7 +14684,7 @@ static char *handle_pri_destroy_span(struct ast_cli_entry *e, int cmd,
 		e->command = "pri destroy span";
 		e->usage =
 			"Usage: pri destroy span <span>\n"
-			"       Destorys D-channel of span and its B-channels.\n"
+			"       Destroys D-channel of span and its B-channels.\n"
 			"	DON'T USE THIS UNLESS YOU KNOW WHAT YOU ARE DOING.\n";
 		return NULL;
 	case CLI_GENERATE:
@@ -15263,7 +15263,7 @@ static char *handle_mfcr2_destroy_link(struct ast_cli_entry *e, int cmd, struct 
 		e->command = "mfcr2 destroy link";
 		e->usage =
 			"Usage: mfcr2 destroy link <index-number>\n"
-			"       Destorys D-channel of link and its B-channels.\n"
+			"       Destroys D-channel of link and its B-channels.\n"
 			"	DON'T USE THIS UNLESS YOU KNOW WHAT YOU ARE DOING.\n";
 		return NULL;
 	case CLI_GENERATE:
