@@ -664,7 +664,7 @@ srvlookup=yes                   ; Enable DNS SRV lookups on outbound calls
 ;                            refuse    : Do not run session timers in any case
 ;                       The default mode of operation is 'accept'.
 ; * session-expires   - Maximum session refresh interval in seconds. Defaults to 1800 secs.
-; * session-minse     - Minimum session refresh interval in seconds. Defualts to 90 secs.
+; * session-minse     - Minimum session refresh interval in seconds. Defaults to 90 secs.
 ; * session-refresher - The session refresher (uac|uas). Defaults to 'uas'.
 ;                            uac - Default to the caller initially refreshing when possible
 ;                            uas - Default to the callee initially refreshing when possible
